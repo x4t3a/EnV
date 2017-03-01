@@ -15,6 +15,7 @@ set noexpandtab
 " Readability.
 set guifont=Monospace\ 14
 set colorcolumn=120
+set number
 
 " Maximize GVIM's window on start-up.
 augroup maximizewindow 
