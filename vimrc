@@ -16,3 +16,9 @@ set noexpandtab
 set guifont=Monospace\ 14
 set colorcolumn=120
 
+" Maximize GVIM's window on start-up.
+augroup maximizewindow 
+    autocmd! 
+    autocmd VimEnter * call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
+augroup END
+
